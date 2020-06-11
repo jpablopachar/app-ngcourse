@@ -1,0 +1,13 @@
+<ul class="list-group">
+  <li class="list-group-item">
+    <a [routerLink]="[index]" routerLinkActive="active" style="cursor: pointer;">
+      <div class="d-flex justify-content-between p-3">
+        <div>
+          <h4 class="mt-0 mb-1">{{ recipe.name }}</h4>
+          <p class="mb-0">{{ recipe.description }}</p>
+        </div>
+        <img [src]="recipe.imagePath" class="align-items-center" style="max-height: 55px;" alt="imagen {{ recipe.name }}">
+      </div>
+    </a>
+  </li>
+</ul>
